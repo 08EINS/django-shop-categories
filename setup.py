@@ -14,7 +14,7 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='django-shop-categories',
+    name='django-shop-categories-08eins-custom',
     version=shop_categories.get_version(),
     description='A extendable category app using django-mptt for django-shop',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
