@@ -31,5 +31,5 @@ setup(
     classifiers=CLASSIFIERS,
     include_package_data=True,
     zip_safe=False,
-    install_requires=['django-shop', 'django-mptt', 'django-treeadmin']
+    install_requires=['django-shop', 'django-mptt', 'django-treeadmin-08eins-custom']
 )
