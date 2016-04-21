@@ -20,7 +20,7 @@ setup(
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     author='Oyvind Saltvik',
     author_email='oyvind.saltvik@gmail.com',
-    url='http://github.com/fivethreeo/django-shop-categories/',
+    url='http://github.com/08EINS/django-shop-categories/',
     packages=find_packages(),
     package_data={
         'shop_categories': [
@@ -31,5 +31,5 @@ setup(
     classifiers=CLASSIFIERS,
     include_package_data=True,
     zip_safe=False,
-    install_requires=['django-shop', 'django-mptt', 'django-treeadmin']
+    install_requires=['django-shop-08eins-custom', 'django-mptt', 'django-treeadmin']
 )
