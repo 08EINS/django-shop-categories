@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404
 
-rom django.views.generic.list import ListView
+from django.views.generic.list import ListView
 from shop.views.product import ProductDetailView
 from shop_categories.models import Category
 
