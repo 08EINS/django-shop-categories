@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 
 from django.views.generic.list import ListView
-from shop.views.product import ProductDetailView
+from shop.views.catalog import ProductRetrieveView
 from shop_categories.models import Category
 
 
@@ -23,7 +23,7 @@ class CategoryShopListView(ListView):
         return context
 
 
-class CategoryProductDetailView(ProductDetailView):
+class CategoryProductDetailView(ProductRetrieveView):
 
     def get_queryset(self):
         queryset = super(CategoryProductDetailView, self).get_queryset()
