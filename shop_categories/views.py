@@ -1,11 +1,11 @@
 from django.shortcuts import get_object_or_404
 
-from shop.views import ShopListView
+from django.views.generic.list import ListView
 from shop.views.product import ProductDetailView
 from shop_categories.models import Category
 
 
-class CategoryShopListView(ShopListView):
+class CategoryShopListView(ListView):
 
     def get_queryset(self):
         category = get_object_or_404(Category, path=self.kwargs['path'])
